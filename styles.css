@@ -1,0 +1,158 @@
+html {
+background: url('gamebg.png');
+background-size: cover;
+background-position: center;
+height: 100vh;
+background-attachment: fixed;
+}
+
+canvas {
+display: block;
+margin: auto;
+background-color: rgb(110, 107, 107);
+margin-top: 10px;
+border: 7px dotted rgb(33, 79, 163);
+}
+
+ul {
+list-style-type: none;
+margin: 0;
+padding: 0;
+border-top: solid white 1px; 
+border-bottom: solid white 1px;
+display: flex;
+justify-content: center;
+justify-content: space-between;
+border: white, solid, 1px;
+animation-name: heading;
+animation-duration: 10s;
+animation-iteration-count: infinite;}
+
+@keyframes heading {
+0%   {background-color:rgba(40, 39, 133, 0.753); }
+25%  {background-color:rgba(253, 186, 0, 0.753); }
+50%  {background-color:rgba(40, 39, 133, 0.753); }
+75%  {background-color:rgba(253, 186, 0, 0.753); }
+100% {background-color:rgba(40, 39, 133, 0.753); }} 
+
+li a 
+{display:block;
+color: white;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+font-size: 50px;
+background-color:rgba(253, 186, 0, 0.753);
+border-radius: 180% ;}
+
+a:hover:not(li) {background-color: rgb(19, 42, 143);}
+
+/*scrollbar*/
+
+body::-webkit-scrollbar {
+width: 12px;               
+}
+
+body::-webkit-scrollbar-track {
+background: orange;        
+}
+
+body::-webkit-scrollbar-thumb {
+background-color: rgb(19, 42, 143);    
+border-radius: 20px;       
+border: 3px dotted rgb(255, 145, 0);  
+}
+
+footer{
+box-sizing: border-box; 
+background-color: rgba(34, 32, 167, 0.753);
+border-top: solid white 1px; ;
+border-bottom: solid white 1px; 
+height: 80px;
+color: white;
+padding: 1em; margin: 0;
+display: flex;
+justify-content: center; align-items: center;
+font-size: 20px;}
+
+#duty{
+background-color: rgba(41, 39, 133, 0.219);
+color: white;
+margin-right: 120px;
+margin-left: 120px;
+border: solid white 1px;
+border: 7px dotted rgb(255, 255, 255);
+padding: 80px;
+}
+
+img {
+width: 40%;
+height: auto;
+display: block;
+margin-left: auto;
+margin-right: auto;
+
+}
+
+#detail{
+background-color: rgba(41, 39, 133, 0.219);
+color: white;
+margin-right: 120px;
+margin-left: 120px;
+border: solid white 1px; 
+padding-bottom: 50px;
+margin-bottom: 80px;
+
+}
+
+#treasure{
+position: absolute;
+margin-top: 360px;
+margin-left: 83px;
+padding: 10px;
+background-color: rgba(41, 39, 133, 0.219);
+border: 7px dotted rgb(33, 79, 163);
+animation-name: points;
+animation-duration: 10s;
+animation-iteration-count: infinite;}
+
+@keyframes points {
+0%   {background-color:rgba(40, 39, 133, 0.753); }
+25%  {background-color:rgba(253, 143, 0, 0.87); }
+50%  {background-color:rgba(40, 39, 133, 0.753); }
+75%  {background-color:rgba(253, 143, 0, 0.87); }
+100% {background-color:rgba(40, 39, 133, 0.753); }} 
+
+#tut{
+position: absolute;
+margin-top: 2px;
+margin-left: 2px;
+width: 25%;
+}
+
+p{
+color: white;
+font-size: 30px;
+font-family:Georgia, 'Times New Roman', Times, serif;
+text-align: center;
+
+}
+
+#gameover{
+
+color: white;
+font-size: 25px;
+margin-left: auto;
+margin-right: auto;
+font-family:Georgia, 'Times New Roman', Times, serif;
+text-align: center;
+animation-name: loser;
+animation-duration: 10s;
+animation-iteration-count: infinite;}
+
+@keyframes loser {
+0%   {background-color:rgba(40, 39, 133, 0.753); }
+25%  {background-color:rgba(253, 143, 0, 0.87); }
+50%  {background-color:rgba(40, 39, 133, 0.753); }
+75%  {background-color:rgba(253, 143, 0, 0.87); }
+100% {background-color:rgba(40, 39, 133, 0.753); }} 
